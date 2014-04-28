@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff7f7f7f">
+
+    <com.applause.android.ui.overlay.OverlayView
+        android:id="@+id/applause_overlay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <RelativeLayout
+        android:id="@+id/applause_overlay_header"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/applause_bar_background_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="Edit the Screenshot"
+            android:textColor="@color/applause_content_ondark_text_color"
+            android:textSize="20sp"
+            android:typeface="sans" />
+
+        <ImageButton
+            android:id="@+id/applause_overlay_go_report"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/applause_button_highlight"
+            android:src="@drawable/applause_tick_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/applause_overlay_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/applause_bar_background_color">
+
+        <ImageButton
+            android:id="@+id/applause_overlay_eraser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/applause_button_highlight"
+            android:src="@drawable/applause_eraser_icon" />
+
+        <ImageButton
+            android:id="@+id/applause_overlay_pencil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/applause_button_highlight"
+            android:src="@drawable/applause_pencil_icon" />
+
+        <ImageButton
+            android:id="@+id/applause_overlay_spray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/applause_overlay_pencil"
+            android:background="@drawable/applause_button_highlight"
+            android:src="@drawable/applause_spray_icon" />
+    </RelativeLayout>
+
+</RelativeLayout>

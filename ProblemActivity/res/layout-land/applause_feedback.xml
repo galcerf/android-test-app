@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#ffffffff"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:background="@color/applause_bar_background_color"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/applause_feedback_header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:text="@string/applause_give_feedback"
+                android:textColor="@color/applause_content_ondark_text_color"
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+            <ImageButton
+                android:id="@+id/applause_feedback_btn_next"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/applause_button_highlight"
+                android:paddingLeft="3dip"
+                android:paddingRight="3dip"
+                android:src="@drawable/applause_tick_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:padding="20dip" >
+
+                <EditText
+                    android:id="@+id/applause_feedback_message_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="3dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/applause_textbox"
+                    android:gravity="top|left"
+                    android:hint="@string/applause_add_a_comment"
+                    android:inputType="text|textMultiLine|textShortMessage|textCapSentences"
+                    android:padding="10dp"
+                    android:textColor="#ff000000"
+                    android:textSize="18sp"
+                    android:typeface="sans" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="340dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="0"
+                android:background="@color/applause_desktop_background_color"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="22dp"
+                            android:text="@string/applause_rate_this_application"
+                            android:textColor="#ffffffff"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:typeface="sans" />
+
+                        <com.applause.android.ui.ApplauseRatingBar
+                            android:id="@+id/applause_feedback_rating_bar"
+                            style="@style/applause_blue_rating_bar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginBottom="20dip"
+                            android:layout_marginLeft="20dip"
+                            android:layout_marginRight="20dp"
+                            android:max="5"
+                            android:numStars="5"
+                            android:rating="3"
+                            android:stepSize="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:text="@string/applause_feedback_no_rating_store"
+                            android:textStyle="italic"
+                            android:typeface="sans" />
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginRight="30dip"
+                    android:background="#ff606060"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="18dp" >
+
+                    <RelativeLayout
+                        android:id="@+id/applause_feedback_screenshots_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <FrameLayout
+                            android:id="@+id/applause_feedback_screenshot"
+                            android:layout_width="72dp"
+                            android:layout_height="118dp"
+                            android:layout_margin="5dip"
+                            android:background="@drawable/applause_gallery_img" >
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:scaleType="fitCenter" />
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:scaleType="fitCenter"
+                                android:tag="overlay" />
+                        </FrameLayout>
+
+                        <CheckBox
+                            android:id="@+id/applause_feedback_include_screenshot_check_box"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="5dip"
+                            android:button="@drawable/applause_checkbox"
+                            android:checked="true" />
+
+                        <TextView
+                            android:id="@+id/applause_include_screenshot_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/applause_feedback_screenshot"
+                            android:text="@string/applause_include_screenshot"
+                            android:textColor="#ffffffff"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:typeface="sans" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/applause_include_screenshot_text"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/applause_include_screenshot_text"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/applause_send_screenshot_desc"
+                            android:textStyle="italic"
+                            android:typeface="sans" />
+
+                    </RelativeLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/applause_screenshot_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+</FrameLayout>

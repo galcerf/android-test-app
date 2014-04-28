@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="applause_white">#FFFFFF</color>
+    <color name="applause_transparent">#00000000</color>
+
+    <!--  -->
+    <color name="applause_add_screenshot_color">#242424</color>
+    <color name="applause_add_screenshot_color_pressed">#111111</color>
+
+    <!--  -->
+    <color name="applause_anonymous_login">#3f3f3f</color>
+    <color name="applause_anonymous_login_pressed">#242424</color>
+
+    <!-- new feedback -->
+    <color name="applause_bar_background_color">#3f3f3f</color>
+    <color name="applause_desktop_background_color">#333333</color>
+    <color name="applause_gray_background_color">#333333</color>
+    <color name="applause_turquoise">#28bcd2</color>
+    <color name="applause_turquoise_pressed">#097797</color>
+    <color name="applause_header2_text_color">#999999</color>
+    <color name="applause_content_text_color">#000000</color>
+    <color name="applause_content_ondark_text_color">#ffffff</color>
+
+    <!--  -->
+    <color name="applause_text_secondary">#000000</color>
+    <color name="applause_emphasize_color">#5D7A8C</color>
+
+</resources>

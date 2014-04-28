@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="applause_rate_this_application">Rate this application:</string>
+    <string name="applause_add_a_comment">Add a comment</string>
+    <string name="applause_give_feedback">Give Feedback</string>
+    <string name="applause_include_screenshot">Include screenshot</string>
+    <string name="applause_send_screenshot_desc">Send screenshot of the last page you were on</string>
+    <string name="applause_feedback_desc">How do you like our app? Tap here to share your thoughts with us.</string>
+    <string name="applause_problem_desc">Having a problem? Tap here to let us know about it.</string>
+    <string name="applause_report_a_bug">Report a Bug</string>
+    <string name="applause_select_test_cycle_desc">Please select your Test Cycle from the list below:</string>
+    <string name="applause_test_cycle_hint">Test Cycle ID</string>
+
+    <string name="applause_feedback_no_rating_store">Rating will not be sent to Google Play</string>
+
+    <string name="applause_toast_first_run">Contacting Applause server.\nPlease wait...</string>
+    <string name="applause_toast_mandatory_update">Your version (%s) is known to be unstable. Tap the notification to install a stable one.</string>
+    <string name="applause_toast_unknown_recommended_update">Your version (%s) is outdated. Please contact development team to a get a new version.</string>
+    <string name="applause_toast_recommended_update">Your version (%s) is outdated. Tap the notification to install a new one.</string>
+    <string name="applause_toast_bad_credentials">Could not login to Applause - invalid credentials.</string>
+    <string name="applause_toast_bad_application">Application unavailable, please contact product managers</string>
+    <string name="applause_toast_too_many_devices">Maximum number of devices has been reached. Please contact application\'s owners.</string>
+    <string name="applause_toast_application_inactive">This application does not have an active subscription set up. Please contact application\'s owners.</string>
+    <string name="applause_toast_application_blocked">Your application has expired and can not be run at this time.</string>
+
+    <string name="applause_notification_text_login">Logging in - please wait...</string>
+    <string name="applause_notification_text_report">Tap to report problem</string>
+    <string name="applause_notification_update_ticker">Update available</string>
+    <string name="applause_notification_update_title">Update for %s</string>
+    <string name="applause_notification_update_text">Tap to install version %1$d (%2$s)</string>
+
+    <string name="applause_login_title">Login</string>
+    <string name="applause_login_app_version">App version: %1$s (%2$d)</string>
+    <string name="applause_login_login_button">Login</string>
+    <string name="applause_login_anon_login_button">Anonymous Login</string>
+    <!--  -->
+    <string name="applause_login_identifyProgress">Contacting Applause server...</string>
+    <string name="applause_login_quick_login_hint">Please provide your Applause or uTest credentials</string>
+    <string name="applause_login_progress">Logging in...</string>
+    <string name="applause_login_failed">Login failed</string>
+    <string name="applause_login_wrong_credentials">Invalid credentials.</string>
+
+    <string name="applause_test_cycles_title">Test cycles</string>
+    <string name="applause_test_cycles_hint">Please select your test cycle from the list below:</string>
+    <string name="applause_test_cycles_manual">If you are a uTester, please provide your Test Cycle ID.</string>
+
+    <string name="applause_problem_includes">The problem will be reported to Applause. The report includes: screenshots, logs, comment.</string>
+    <string name="applause_problem_hint">Describe the problem</string>
+    <string name="applause_problem_toast_no_message">Please provide a comment in your report (at least 10 characters).</string>
+    <!--  -->
+    <string name="applause_feedback_toast_no_rating">Please fill in description and rating.</string>
+
+</resources>
